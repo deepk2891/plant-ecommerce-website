@@ -1,0 +1,149 @@
+:root {
+    --green: #2e524a;
+    --dark: #000000;
+    --light: #ffffff;
+    --gray: #424242;
+
+    --transition02: all 0.2s linear;
+    --transition03: all 0.3s linear;
+    --transition05: all 0.5s linear;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none !important;
+    list-style: none;
+}
+body, html {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Nunito", sans-serif;
+}
+/* CURSOR POINTER */
+.cursor {
+    cursor: pointer;
+}
+.dvh-100 {
+    height: 100dvh;
+}
+.green {
+    color: var(--green);
+}
+.dark {
+    color: var(--dark);
+}
+.light {
+    color: var(--light);
+}
+.gray {
+    color: var(--gray);
+}
+.transition02 {
+    transition: var(--transition02);
+}
+.transition03 {
+    transition: var(--transition03);
+}
+.transition05 {
+    transition: var(--transition05);
+}
+/*--------------------------------------------------------------
+# Header START
+--------------------------------------------------------------*/
+@media (min-width: 1200px) {
+    .logo {
+        width: 280px;
+    }
+}
+.logo img {
+    max-height: 26px;
+    margin-right: 6px;
+}
+.logo span {
+    font-size: 26px;
+    font-weight: 700;
+    font-family: "Nunito", sans-serif;
+}
+.header {
+    z-index: 997;
+    height: 60px;
+}
+.header .toggle-sidebar-btn {
+    font-size: 32px;
+    padding-left: 10px;
+    cursor: pointer;
+    color: var(--green);
+}
+.header .search-bar {
+    min-width: 360px;
+    padding: 0 20px;
+}
+@media (max-width: 1199px) {
+    .header .search-bar {
+        position: fixed;
+        top: 50px;
+        left: 0;
+        right: 0;
+        padding: 20px;
+        box-shadow: 0px 0px 15px 0px rgba(1, 41, 112, 0.1);
+        background: white;
+        z-index: 9999;
+        transition: 0.3s;
+        visibility: hidden;
+        opacity: 0;
+    }
+    .header .search-bar-show {
+        top: 60px;
+        visibility: visible;
+        opacity: 1;
+    }
+}
+.header .search-form {
+    width: 100%;
+}
+.header .search-form input {
+    border: 0;
+    font-size: 14px;
+    color: #012970;
+    border: 1px solid rgba(1, 41, 112, 0.2);
+    padding: 7px 38px 7px 8px;
+    border-radius: 3px;
+    transition: 0.3s;
+    width: 100%;
+}
+.header .search-form input:focus,
+.header .search-form input:hover {
+    outline: none;
+    box-shadow: 0 0 10px 0 rgba(1, 41, 112, 0.15);
+    border: 1px solid rgba(1, 41, 112, 0.3);
+}
+.header .search-form button {
+    border: 0;
+    padding: 0;
+    margin-left: -30px;
+    background: none;
+}
+.header .search-form button i {
+    color: var(--green);
+}
+/*--------------------------------------------------------------
+# Header Nav
+--------------------------------------------------------------*/
+.header-nav .nav-profile img {
+    max-height: 36px;
+}
+.message-item img {
+    height: 2.5rem;
+}
+/*--------------------------------------------------------------
+# Header END
+--------------------------------------------------------------*/
