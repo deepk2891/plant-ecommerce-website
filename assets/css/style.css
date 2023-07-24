@@ -20,6 +20,7 @@ body, html {
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
     scroll-behavior: smooth;
+    background-color: #f6f9ff;
 }
 h1,
 h2,
@@ -269,3 +270,32 @@ header {
 .sidebar-nav .nav-content a.active {
     color: #2ab939;
 }
+/*--------------------------------------------------------------
+# Main
+--------------------------------------------------------------*/
+.main {
+    margin-top: 80px;
+    margin-left: 18.75rem;
+    transition: var(--transition03);
+}
+.move-main {
+    margin-left: 0;
+}
+/*--------------------------------------------------------------
+# Main END
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.footer {
+    margin-top: 80px;
+    margin-left: 18.75rem;
+    transition: var(--transition03);
+    /* background-color: #fae6c2; */
+}
+.move-footer {
+    margin-left: 0;
+}
+/*--------------------------------------------------------------
+# Footer END
+--------------------------------------------------------------*/
