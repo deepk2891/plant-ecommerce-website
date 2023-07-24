@@ -12,6 +12,12 @@
     html {
         font-size: 14px !important;
     }
+    .main {
+        margin-left: 0;
+    }
+    .footer {
+        margin-left: 0;
+    }
 }
 @media (max-width:992px) {
     html {
