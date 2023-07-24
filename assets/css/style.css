@@ -1,5 +1,6 @@
 :root {
     --green: #2e524a;
+    --light-green: #2ab939;
     --dark: #000000;
     --light: #ffffff;
     --gray: #424242;
@@ -147,3 +148,121 @@ h6 {
 /*--------------------------------------------------------------
 # Header END
 --------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Sidebar
+--------------------------------------------------------------*/
+.sidebar {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    bottom: 0;
+    width: 18.75rem;
+    z-index: 996;
+    transition: var(--transition03);
+    padding: 1.25rem;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: var(--green) transparent;
+    box-shadow: 0px 0px 20px rgba(1, 41, 112, 0.1);
+    background-color: var(--light);
+}
+.move-sidebar {
+    left: -18.75rem;
+}
+.sidebar::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+    background-color: #fff;
+}
+.sidebar::-webkit-scrollbar-thumb {
+    background-color: #aab7cf;
+}
+.sidebar-nav {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.sidebar-nav li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.sidebar-nav .nav-item {
+    margin-bottom: 5px;
+}
+.sidebar-nav .nav-heading {
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #899bbd;
+    font-weight: 600;
+    margin: 10px 0 5px 15px;
+}
+.sidebar-nav .nav-link {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 600;
+    color: #2ab939;
+    transition: 0.3;
+    background: #f6f9ff;
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+.sidebar-nav .nav-link i {
+    font-size: 16px;
+    margin-right: 10px;
+    color: #2ab939;
+}
+.sidebar-nav .nav-link.collapsed {
+    color: #012970;
+    background: #fff;
+}
+.sidebar-nav .nav-link.collapsed i {
+    color: #899bbd;
+}
+.sidebar-nav .nav-link:hover {
+    color: #2ab939;
+    background: #f6f9ff;
+}
+.sidebar-nav .nav-link:hover i {
+    color: #2ab939;
+}
+.sidebar-nav .nav-link .bi-chevron-down {
+    margin-right: 0;
+    transition: transform 0.2s ease-in-out;
+}
+.sidebar-nav .nav-link:not(.collapsed) .bi-chevron-down {
+    transform: rotate(180deg);
+}
+.sidebar-nav .nav-content {
+    padding: 5px 0 0 0;
+    margin: 0;
+    list-style: none;
+}
+.sidebar .nav-content li {
+    transition: var(--transition02);
+}
+.sidebar .nav-content li:hover {
+    transform: translateX(7px);
+}
+.sidebar-nav .nav-content a {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: #012970;
+    transition: 0.3;
+    padding: 10px 0 10px 40px;
+    transition: 0.3s;
+}
+.sidebar-nav .nav-content a i {
+    font-size: 6px;
+    margin-right: 8px;
+    line-height: 0;
+    border-radius: 50%;
+}
+.sidebar-nav .nav-content a:hover,
+.sidebar-nav .nav-content a.active {
+    color: #2ab939;
+}
