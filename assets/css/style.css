@@ -324,6 +324,56 @@ header {
 .about .content p:last-child {
     margin-bottom: 0;
 }
+
+/*--------------------------------------------------------------
+# Contact Section
+--------------------------------------------------------------*/
+.contact .info-item {
+    background-color: #f4f4f4;
+}
+.contact .info-item .icon {
+    width: 56px;
+    height: 56px;
+    font-size: 24px;
+}
+.contact .email-form {
+    width: 100%;
+    margin-top: 30px;
+    background: #fff;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+.contact .email-form .form-group {
+    padding-bottom: 20px;
+}
+.contact .email-form input,
+.contact .email-form textarea {
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 18px;
+}
+.contact .email-form input:focus,
+.contact .email-form textarea:focus {
+    border-color: var(--light-green);
+}
+.contact .email-form input {
+    height: 48px;
+}
+.contact .email-form textarea {
+    padding: 10px 12px;
+}
+.contact .email-form button[type=submit] {
+    padding: 12px 40px;
+    border: 2px solid transparent;
+    color: var(--light);
+    background-color: var(--green);
+    transition: var(--transition03);
+    border-radius: 50px;
+}
+.contact .email-form button[type=submit]:hover {
+    background: var(--light);
+    border: 2px solid var(--green);
+    color: var(--green);
+}
 /*--------------------------------------------------------------
 # Main END
 --------------------------------------------------------------*/
