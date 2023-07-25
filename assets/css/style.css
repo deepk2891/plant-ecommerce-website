@@ -20,7 +20,7 @@ body, html {
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
     scroll-behavior: smooth;
-    background-color: #f6f9ff;
+    background-color: #e6ffe2;
 }
 h1,
 h2,
@@ -276,10 +276,25 @@ header {
 .main {
     margin-top: 80px;
     margin-left: 18.75rem;
+    padding: 30 px 0 0 0;
     transition: var(--transition03);
 }
 .move-main {
     margin-left: 0;
+}
+.section {
+    padding: 60px 0 0 0;
+}
+.main-img {
+    height: 500px;
+}
+.floatmango {
+    height: 12.5rem;
+    width: 12.5rem;
+    right: 0%;
+    bottom: 0%;
+    filter: brightness(0.8);
+    z-index: 0;
 }
 /*--------------------------------------------------------------
 # Main END
