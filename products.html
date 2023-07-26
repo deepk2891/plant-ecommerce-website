@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantshop - eCommerce Website</title>
+    <!-- Google Fonts -->
+    <link
+     href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+     rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- media -->
+    <link rel="stylesheet" href="assets/css/media.css">
+</head>
+
+<body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center transition05 bg-white ps-3">
+        <!-- logo -->
+        <div class="d-flex align-items-center justify-content-between">
+            <a href="index.html" class="logo text-decoration-none d-flex align-items-center">
+                <img src="assets/images/logo.png" alt="">
+                <span class="d-none d-lg-block green">Plantshop</span>
+            </a>
+            <i class="ri-side-bar-line ps-5 toggle-sidebar-btn"></i>
+        </div>
+        <!-- search bar -->
+        <div class="search-bar">
+            <form class="search-form d-flex align-items-center" method="POST" action="#">
+                <input type="text" name="query" placeholder="Search" title="Enter search keyword">
+                <button title="Search"><i class="bi bi-search"></i></button>
+            </form>
+        </div>
+        <!-- navbar -->
+        <nav class="header-nav ms-auto">
+            <ul class="d-flex align-items-center m-0 p-0">
+                <li class="nav-item d-block d-lg-none">
+                    <a class="nav-link nav-icon fs-4 me-4 position-relative search-bar-toggle " href="#">
+                        <i class="bi bi-search d-none d-sm-block"></i>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link nav-icon fs-4 me-4 position-relative" href="#" data-bs-toggle="dropdown">
+                        <i class="bi bi-bell"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
+                        <li class="dropdown-header gray">
+                            You have 4 new notifications
+                            <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li class="notification-item py-1 d-flex align-items-center">
+                            <i class="bi bi-exclamation-circle text-warning px-4 fs-4"></i>
+                            <div class="my-1">
+                                <h4 class="fw-bold fs-6 m-0">Lorem Ipsum</h4>
+                                <p class="fs-6 gray m-0 py-1">Quae dolorem earum</p>
+                                <p class="fs-6 gray m-0">30 min. ago</p>
+                            </div>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li class="notification-item py-1 d-flex align-items-center">
+                            <i class="bi bi-x-circle text-danger px-4 fs-4"></i>
+                            <div class="my-1">
+                                <h4 class="fw-bold fs-6 m-0">Atque rerum nesciunt</h4>
+                                <p class="fs-6 gray m-0 py-1">Quae dolorem earum</p>
+                                <p class="fs-6 gray m-0">1 hr. ago</p>
+                            </div>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li class="notification-item py-1 d-flex align-items-center">
+                            <i class="bi bi-check-circle text-success px-4 fs-4"></i>
+                            <div class="my-1">
+                                <h4 class="fw-bold fs-6 m-0">Sit rerum fuga</h4>
+                                <p class="fs-6 gray m-0 py-1">Quae dolorem earum</p>
+                                <p class="fs-6 gray m-0">2 hrs. ago</p>
+                            </div>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li class="notification-item py-1 d-flex align-items-center">
+                            <i class="bi bi-info-circle text-primary px-4 fs-4"></i>
+                            <div class="my-1">
+                                <h4 class="fw-bold fs-6 m-0">Dicta reprehenderit</h4>
+                                <p class="fs-6 gray m-0 py-1">Quae dolorem earum</p>
+                                <p class="fs-6 gray m-0">4 hrs. ago</p>
+                            </div>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li class="dropdown-footer text-center">
+                            <a href="#">Show all notifications</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link nav-icon fs-4 me-4 position-relative" href="#" data-bs-toggle="dropdown">
+                        <i class="bi bi-chat-left-text"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages">
+                        <li class="dropdown-header gray">
+                            You have 3 new messages
+                            <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li class="message-item">
+                            <a href="#" class="d-flex align-items-center">
+                                <img src="assets/images/messages-1.jpg" alt="img" class="rounded-circle px-3">
+                                <div class="my-1">
+                                    <h4 class="fw-bold fs-6 m-0 dark">Maria Hudson</h4>
+                                    <p class="fs-6 gray m-0 py-1">Velit asperiores et allo</p>
+                                    <p class="fs-6 gray m-0">4 hrs. ago</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li class="message-item">
+                            <a href="#" class="d-flex align-items-center">
+                                <img src="assets/images/messages-2.jpg" alt="img" class="rounded-circle px-3">
+                                <div class="my-1">
+                                    <h4 class="fw-bold fs-6 m-0 dark">Anna Nelson</h4>
+                                    <p class="fs-6 gray m-0 py-1">Velit asperiores et allo</p>
+                                    <p class="fs-6 gray m-0">6 hrs. ago</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li class="message-item">
+                            <a href="#" class="d-flex align-items-center">
+                                <img src="assets/images/messages-3.jpg" alt="img" class="rounded-circle px-3">
+                                <div class="my-1">
+                                    <h4 class="fw-bold fs-6 m-0 dark">David Muldon</h4>
+                                    <p class="fs-6 gray m-0 py-1">Velit asperiores et allo</p>
+                                    <p class="fs-6 gray m-0">8 hrs. ago</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li class="dropdown-footer text-center">
+                            <a href="#">Show all messages</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown pe-3">
+                    <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-person fs-3"></i>
+                    </a>
+                    <ul class="dropdown-menu profile">
+                        <li class="dropdown-header">
+                            <h6 class="dark fs-5">Deep Kothari</h6>
+                            <span class="dark fs-6">Web Designer</span>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li>
+                            <a href="profile.html" class="dropdown-item d-flex align-items-center">
+                                <i class="bi bi-person fs-5 pe-3"></i>
+                                <span>My Profile</span>
+                            </a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li>
+                            <a href="profile.html" class="dropdown-item d-flex align-items-center">
+                                <i class="bi bi-gear fs-5 pe-3"></i>
+                                <span>Account Settings</span>
+                            </a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li>
+                            <a href="#contact" class="dropdown-item d-flex align-items-center">
+                                <i class="bi bi-question-circle fs-5 pe-3"></i>
+                                <span>Need Help?</span>
+                            </a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li>
+                            <a href="login.html" class="dropdown-item d-flex align-items-center">
+                                <i class="bi bi-box-arrow-right fs-5 pe-3"></i>
+                                <span>Sign Out</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-icon fs-3 pe-4" href="products.html">
+                        <i class="bi bi-cart"></i>
+                    </a>
+                </li>
+                <li class="nav-item pe-3">
+                    <a href="login.html" class="btn btn-primary">Login </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ======= Sidebar ======= -->
+    <aside id="sidebar" class="sidebar">
+
+        <ul class="sidebar-nav" id="sidebar-nav">
+
+            <li class="nav-item">
+                <a class="nav-link " href="index.html">
+                    <i class="bi bi-grid"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
+                    <i class="bi bi-tree"></i><span>Large Trees</span><i class="bi bi-chevron-down ms-auto"></i>
+                </a>
+                <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                    <li>
+                        <a href="products.html">
+                            <i class="bi bi-circle"></i><span>Mango tree</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="products.html">
+                            <i class="bi bi-circle"></i><span>Banyan tree</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="products.html">
+                            <i class="bi bi-circle"></i><span>Banana tree</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="products.html">
+                            <i class="bi bi-circle"></i><span>Palm tree</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="products.html">
+                            <i class="bi bi-circle"></i><span>Banmoo tree</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
+                    <i class="bi bi-flower1"></i><span>Flowers</span><i class="bi bi-chevron-down ms-auto"></i>
+                </a>
+                <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                    <li>
+                        <a href="products.html">
+                            <i class="bi bi-circle"></i><span>Marigold</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="products.html">
+                            <i class="bi bi-circle"></i><span>Lavender</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="products.html">
+                            <i class="bi bi-circle"></i><span>Lily</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="products.html">
+                            <i class="bi bi-circle"></i><span>Sun flower</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="products.html">
+                            <i class="bi bi-circle"></i><span>Rose</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="products.html">
+                            <i class="bi bi-circle"></i><span>Tulip</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-circle"></i><span>Jasmine</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
+                    <i class="bi bi-flower2"></i><span>Bonsai</span><i class="bi bi-chevron-down ms-auto"></i>
+                </a>
+                <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                    <li>
+                        <a href="products.html">
+                            <i class="bi bi-circle"></i><span>Japanese Maple</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="products.html">
+                            <i class="bi bi-circle"></i><span>Chinese Elm</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="products.html">
+                            <i class="bi bi-circle"></i><span>Fukien Tea Tree</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="products.html">
+                            <i class="bi bi-circle"></i><span>Box Wood</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="products.html">
+                            <i class="bi bi-circle"></i><span>Desert Rose</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#">
+                    <i class="bi bi-flower3"></i><span>Special Pots</span><i class="bi bi-chevron-down ms-auto"></i>
+                </a>
+                <ul id="charts-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                    <li>
+                        <a href="products.html">
+                            <i class="bi bi-circle"></i><span>Clay Pots</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="products.html">
+                            <i class="bi bi-circle"></i><span>Metal Pots</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="products.html">
+                            <i class="bi bi-circle"></i><span>Concrete Pots</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="products.html">
+                            <i class="bi bi-circle"></i><span>Fiber Glass Pots</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="products.html">
+                            <i class="bi bi-circle"></i><span>Plastic Pots</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="products.html">
+                            <i class="bi bi-circle"></i><span>Self-Watering Pots</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-bs-target="#icons-nav" data-bs-toggle="collapse" href="#">
+                    <i class="bi bi-tree-fill"></i><span>Gardening Tools</span><i class="bi bi-chevron-down ms-auto"></i>
+                </a>
+                <ul id="icons-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                    <li>
+                        <a href="products.html">
+                            <i class="bi bi-circle"></i><span>Gloves</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="products.html">
+                            <i class="bi bi-circle"></i><span>Rake</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="products.html">
+                            <i class="bi bi-circle"></i><span>Watering Can</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="products.html">
+                            <i class="bi bi-circle"></i><span>Spade</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="products.html">
+                            <i class="bi bi-circle"></i><span>Wheel Barrow</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="products.html">
+                            <i class="bi bi-circle"></i><span>Leaf Blower</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-heading">Pages</li>
+
+            <li class="nav-item">
+                <a class="nav-link collapsed " href="index.html">
+                    <i class="bi bi-house-exclamation-fill"></i>
+                    <span>Home</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed text-primary" href="view.html">
+                    <i class="bi bi-eye-fill"></i>
+                    <span>View Cart</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed text-primary" href="products.html">
+                    <i class="bi bi-box"></i>
+                    <span>Products page</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed text-primary" href="profile.html">
+                    <i class="bi bi-box"></i>
+                    <span>Profile</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed text-primary" href="register.html">
+                    <i class="bi bi-card-list"></i>
+                    <span>Register</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed text-primary" href="login.html">
+                    <i class="bi bi-box-arrow-in-right"></i>
+                    <span>Login</span>
+                </a>
+            </li>
+        </ul>
+    </aside><!-- End Sidebar-->
+
+    <!-- ======= Main Section ======= -->
+    <main id="main" class="main">
+        <nav class="container" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item text-dark fs-5 opacity-5"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item text-dark fs-5 active" aria-current="page">Products</li>
+            </ol>
+        </nav>
+        <section class="products pt-3 pb-5" id="products">
+            <div class="container">
+                <h2 class="text-center green display-3 pb-5 fw-bold">Products</h2>
+                <div class="row gy-5">
+                    <div class="col-lg-3 col-sm-6 menu-item">
+                        <div class="card prod h-100 overflow-hidden">
+                            <img class="card-img-top transition03" src="./assets/images/mango-tree.webp" alt="..." />
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <h5 class="fw-bolder transition03">Mango Tree</h5>
+                                    $30.50 - $56.05
+                                </div>
+                            </div>
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn addtocart mt-auto" href="view.html">View cart</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 menu-item">
+                        <div class="card prod h-100 overflow-hidden">
+                            <img class="card-img-top transition03" src="./assets/images/banyan-tree.webp" alt="..." />
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <h5 class="fw-bolder transition03">Banyan Tree</h5>
+                                    $25.50 - $16.05
+                                </div>
+                            </div>
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn addtocart mt-auto" href="view.html">View cart</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 menu-item">
+                        <div class="card prod h-100 overflow-hidden">
+                            <img class="card-img-top transition03" src="./assets/images/banana-tree.jpeg" alt="..." />
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <h5 class="fw-bolder transition03">Banana Tree</h5>
+                                    $30.50 - $56.05
+                                </div>
+                            </div>
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn addtocart mt-auto" href="view.html">View cart</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 menu-item">
+                        <div class="card prod h-100 overflow-hidden">
+                            <img class="card-img-top transition03" src="./assets/images/palm-tree.jpeg" alt="..." />
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <h5 class="fw-bolder transition03">Palm Tree</h5>
+                                    $50.50 - $56.05
+                                </div>
+                            </div>
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn addtocart mt-auto" href="view.html">View cart</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 menu-item">
+                        <div class="card prod h-100 overflow-hidden">
+                            <img class="card-img-top transition03" src="./assets/images/marigold-flower.jpeg" alt="..." />
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <h5 class="fw-bolder transition03">Marigold</h5>
+                                    $17.50 - $16.05
+                                </div>
+                            </div>
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn addtocart mt-auto" href="view.html">View cart</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 menu-item">
+                        <div class="card prod h-100 overflow-hidden">
+                            <img class="card-img-top transition03" src="./assets/images/lavender-flower.jpeg" alt="..." />
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <h5 class="fw-bolder transition03">Lavender</h5>
+                                    $50.50 - $76.05
+                                </div>
+                            </div>
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn addtocart mt-auto" href="view.html">View cart</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 menu-item">
+                        <div class="card prod h-100 overflow-hidden">
+                            <img class="card-img-top transition03" src="./assets/images/lily-flower.jpeg" alt="..." />
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <h5 class="fw-bolder transition03">Lily</h5>
+                                    $70.50 - $76.05
+                                </div>
+                            </div>
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn addtocart mt-auto" href="view.html">View cart</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 menu-item">
+                        <div class="card prod h-100 overflow-hidden">
+                            <img class="card-img-top transition03" src="./assets/images/sun-flower.jpeg" alt="..." />
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <h5 class="fw-bolder transition03">Sunflower</h5>
+                                    $25.50 - $76.05
+                                </div>
+                            </div>
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn addtocart mt-auto" href="view.html">View cart</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 menu-item">
+                        <div class="card prod h-100 overflow-hidden">
+                            <img class="card-img-top transition03" src="./assets/images/JapaneseMaple-bonsai.jpeg" alt="..." />
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <h5 class="fw-bolder transition03">Japanese Maple</h5>
+                                    $45.50 - $76.05
+                                </div>
+                            </div>
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn addtocart mt-auto" href="view.html">View cart</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 menu-item">
+                        <div class="card prod h-100 overflow-hidden">
+                            <img class="card-img-top transition03" src="./assets/images/ChineseElm-bonsai.jpeg" alt="..." />
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <h5 class="fw-bolder transition03">Chinese Elm</h5>
+                                    $5.50 - $76.05
+                                </div>
+                            </div>
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn addtocart mt-auto" href="view.html">View cart</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 menu-item">
+                        <div class="card prod h-100 overflow-hidden">
+                            <img class="card-img-top transition03" src="./assets/images/FujienTeaTree-bonsai.jpeg" alt="..." />
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <h5 class="fw-bolder transition03">Fujien Tea Tree</h5>
+                                    $52.50 - $76.05
+                                </div>
+                            </div>
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn addtocart mt-auto" href="view.html">View cart</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 menu-item">
+                        <div class="card prod h-100 overflow-hidden">
+                            <img class="card-img-top transition03" src="./assets/images/BoxWood-bonsai.jpeg" alt="..." />
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <h5 class="fw-bolder transition03">Box Wood</h5>
+                                    $32.50 - $16.05
+                                </div>
+                            </div>
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn addtocart mt-auto" href="view.html">View cart</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 menu-item">
+                        <div class="card prod h-100 overflow-hidden">
+                            <img class="card-img-top transition03" src="./assets/images/clay-pot.jpeg" alt="..." />
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <h5 class="fw-bolder transition03">Clay pot</h5>
+                                    $32.50 - $16.05
+                                </div>
+                            </div>
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn addtocart mt-auto" href="view.html">View cart</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 menu-item">
+                        <div class="card prod h-100 overflow-hidden">
+                            <img class="card-img-top transition03" src="./assets/images/metal-pot.jpeg" alt="..." />
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <h5 class="fw-bolder transition03">Metal pot</h5>
+                                    $52.50 - $16.05
+                                </div>
+                            </div>
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn addtocart mt-auto" href="view.html">View cart</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 menu-item">
+                        <div class="card prod h-100 overflow-hidden">
+                            <img class="card-img-top transition03" src="./assets/images/Self-watering-pot.jpeg" alt="..." />
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <h5 class="fw-bolder transition03">Self-watering pot</h5>
+                                    $12.50 - $16.05
+                                </div>
+                            </div>
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn addtocart mt-auto" href="view.html">View cart</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 menu-item">
+                        <div class="card prod h-100 overflow-hidden">
+                            <img class="card-img-top transition03" src="./assets/images/plastic-pot.jpeg" alt="..." />
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <h5 class="fw-bolder transition03">Plastic pot</h5>
+                                    $22.50 - $16.05
+                                </div>
+                            </div>
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn addtocart mt-auto" href="view.html">View cart</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 menu-item">
+                        <div class="card prod h-100 overflow-hidden">
+                            <img class="card-img-top transition03" src="./assets/images/gloves-tools.jpeg" alt="..." />
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <h5 class="fw-bolder transition03">Gloves</h5>
+                                    $52.50 - $16.05
+                                </div>
+                            </div>
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn addtocart mt-auto" href="view.html">View cart</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 menu-item">
+                        <div class="card prod h-100 overflow-hidden">
+                            <img class="card-img-top transition03" src="./assets/images/watering-tool.jpeg" alt="..." />
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <h5 class="fw-bolder transition03">Watering can</h5>
+                                    $72.50 - $16.05
+                                </div>
+                            </div>
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn addtocart mt-auto" href="view.html">View cart</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 menu-item">
+                        <div class="card prod h-100 overflow-hidden">
+                            <img class="card-img-top transition03" src="./assets/images/spade-tool.jpeg" alt="..." />
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <h5 class="fw-bolder transition03">Spade</h5>
+                                    $12.50 - $16.05
+                                </div>
+                            </div>
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn addtocart mt-auto" href="view.html">View cart</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 menu-item">
+                        <div class="card prod h-100 overflow-hidden">
+                            <img class="card-img-top transition03" src="./assets/images/rake-tools.jpeg" alt="..." />
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <h5 class="fw-bolder transition03">Rake</h5>
+                                    $17.50 - $16.05
+                                </div>
+                            </div>
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn addtocart mt-auto" href="view.html">View cart</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer pb-5">
+        <div class="container">
+            <div class="row gy-2">
+                <div class="col-lg-3 col-md-6 footer-links pb-5">
+                    <div class="d-flex justify-content-center justify-content-md-start">
+                        <i class="bi bi-geo-alt icon fs-5 pe-2 green"></i>
+                        <h4 class="fs-4 fw-bold green pb-3">Address</h4>
+                    </div>
+                    <p class="text-center text-md-start">
+                        A108 Surat Street Appartment<br>
+                        New York, NY 535022 - US<br>
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-6 footer-links pb-5">
+                    <div class="d-flex justify-content-center justify-content-md-start">
+                        <i class="bi bi-telephone icon fs-5 pe-2 green"></i>
+                        <h4 class="fs-4 fw-bold green pb-3">Reservations</h4>
+                    </div>
+                    <p class="text-center text-md-start">
+                        <span class="d-block"><strong>Phone:</strong> +1 5589 55488 55</span>
+                        <span class="d-block"><strong>Email:</strong> info@example.com</span>
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-6 footer-links pb-5">
+                    <div class="d-flex justify-content-center justify-content-md-start">
+                        <i class="bi bi-clock icon fs-5 pe-2 green"></i>
+                        <h4 class="fs-4 fw-bold green pb-3">Opening Hours</h4>
+                    </div>
+                    <p class="text-center text-md-start">
+                        <strong>Mon-Sat:</strong> 11AM - 23PM<br>
+                        Sunday: Closed
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-6 footer-links pb-5">
+                    <h4 class="fs-4 fw-bold green pb-3 text-center text-md-start">Follow Us</h4>
+                    <div class="social-links d-flex gap-3 justify-content-center justify-content-md-start">
+                        <a href="#" class="twitter text-decoration-none dark fs-5"><i class="bi bi-twitter "></i></a>
+                        <a href="#" class="facebook text-decoration-none dark fs-5"><i class="bi bi-facebook "></i></a>
+                        <a href="#" class="instagram text-decoration-none dark fs-5"><i class="bi bi-instagram "></i></a>
+                        <a href="#" class="linkedin text-decoration-none dark fs-5"><i class="bi bi-linkedin "></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center py-3">
+                <strong class="">&copy; Copyright <span>Yummy</span></strong>.
+                All Rights Reserved
+            </div>
+            <div class="text-center">
+                Designed by Deep Kothari
+            </div>
+        </div>
+    </footer><!-- End Footer -->
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <!-- js -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
